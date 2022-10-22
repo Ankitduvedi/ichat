@@ -3,6 +3,7 @@
     margin: auto;
     width: 70px;
     height: 70px;
+    margin-bottom: 5px;
 }
 body{
     background-image: linear-gradient(white, purple);
@@ -50,7 +51,12 @@ body{
 }
 .btn{
     cursor:pointer;
-    border: 2px solid black;
+    border: 6px solid purple;
     border-radius: 6px;
     height: 40px;
+    font: bolder;
+}
+.btn:hover{
+    background-color: rgb(175, 90, 175);
+    
 }

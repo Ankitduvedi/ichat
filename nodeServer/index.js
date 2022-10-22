@@ -1,8 +1,9 @@
 //Node server which handle socket io connecti
-// const express = require('express');
-// const request = require('request');
+const express = require('express');
+const request = require('request');
 
-// const app = express();
+const app = express();
+
 
 // app.use((req, res, next) => {
 //   res.header(Access-Control-Allow-Origin, '*');
@@ -11,7 +12,7 @@
 
 
 
-const io = require('socket.io')(8000)
+const io = require('socket.io')//(8000)
 const users ={}
 
 io.on('connection', socket =>{    //io.on is used to listen all connections 
@@ -30,3 +31,6 @@ io.on('connection', socket =>{    //io.on is used to listen all connections
     })
 });
 
+app.listen(8000, function(){
+    console.log("server is running on port 8000")
+})
